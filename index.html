@@ -5,250 +5,281 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>firstproject</title>
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="swift.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
-<body class="body">
-  <center>
-    <img class="img" src="img/who2.png" class="image-fluid" alt="">
-  </center>
-  <div class="back">
-    <p class="social">Use social media account (optional)</p>
-    <a href="" class="btn btn-primary" type="submit" value="" style="width: 50%; margin-left: 25%;">
-      <i class="bi bi-facebook"></i> Sigh up with facebook</a><br /><br />
-    <form class="row">
-          <div class="value">
-            <p class="p"><span class="or">or fill the form below</span></p>
-      </div>
-      <div class="all">
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow" style="background: white;">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="img/swifttalk-Logo.png" alt="" srcset=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="offcanvas" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <span> </span>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link  active" style="color: red;" href="whogo.html">WhoGoHost</a>
+            </li>
+            <li class="nav-item dropdown">
+              <div class="inter">
+                <a class="nav-link active dropdown-toggle" style="color: red;" href="#" id="offcanvasNavbarDropdown" role="button"
+                  data-bs-toggle="dropdown" >
+                  Service
+                </a>
 
-        <div class="container-fluid">
-          <div class="row">
-            <p class="personal">Personal Information</p>
-            <div class="col-md-6">
-              <label for="validationCustom01" class="form-label">First name</label>
-              <input type="text" class="form-control" id="validationCustom01" value="" required>
-              <div class="valid-feedback">
-
-              </div>
-            </div>
-            <div class="col-md-6">
-              <label for="" class="form-label">Last name</label>
-              <input type="text" class="form-control" id="validationCustom02" value="" required>
-              <div class="valid-feedback">
-
-              </div>
-            </div>
-          </div><br />
-
-          <div class="row">
-            <div class="col-md-6">
-              <label for="inputEmail4" class="form-label">Email Address</label>
-              <input type="email" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-md-6">
-              <label for="inputPhone" class="form-label">Phone Number</label>
-              <select id="inputPhone" class="form-select">
-                <option selected>Nigeria +234<iconify-icon icon="emojione-v1:flag-for-nigeria"></iconify-icon>
-                </option>
-                <option>Austria +43</option>
-                <option>Azerbaijan +994</option>
-                <option>Bangladesh +880</option>
-                <option>Bahrain +973</option>
-              </select>
-            </div>
-          </div>
-        </div><br /><br />
-
-        <div class="container-fluid">
-          <div class="row">
-            <span class="span">Billing Address</span><br /><br>
-            <div class="col-md-6">
-              <label for="validationCustom01" class="form-label">Company Name (Optional></label>
-              <input type="text" class="form-control" id="validationCustom01" value="" required>
-              <div class="valid-feedback">
-
-              </div>
-            </div>
-            <div class="col-md-6">
-              <label for="" class="form-label">Street Address</label>
-              <input type="text" class="form-control" id="validationCustom02" value="" required>
-              <div class="valid-feedback">
-
-              </div>
-            </div>
-          </div><br />
-
-          <div class="row">
-            <div class="col-md-6">
-              <label for="inputtext" class="form-label"> <label for="" class="form-label">Street Address
-                  2(Optional)</label>
-              </label>
-              <input type="email" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-md-6">
-              <label for="inputtext" class="form-label"> <label for="" class="form-label">City</label>
-              </label>
-              <input type="text" class="form-control" id="inputEmail4">
-            </div>
-          </div><br />
-          <div class="row">
-            <div class="col-md-3">
-              <label for="inputState" class="form-label">State</label>
-              <select id="inputState" class="form-select">
-                <option selected>OYO</option>
-                <option>ILORIN</option>
-                <option>EKITI</option>
-                <option>LAGOS</option>
-                <option>OSUN</option>
-              </select>
-            </div>
-            <div class="col-md-3">
-              <label for="validationDefault05" class="form-label">Postcode*</label>
-              <input type="text" class="form-control" id="validationDefault05" required>
-            </div>
-            <div class="col-md-6">
-              <label for="inputCountry" class="form-label">Country</label>
-              <select id="inputCountry" class="form-select">
-                <option selected>NIGERIA</option>
-                <option>INDIA</option>
-                <option>JAMAICA</option>
-                <option>PERU</option>
-                <option>MEXICO</option>
-              </select>
-            </div>
-          </div><br /><br />
-          <p class="additional">Additional Information</p>
-          <p class="required">(Required field are marked with)</p><br />
-          
-          <div class="row">
-            <div class="col-md-6">
-              <label for="inputCountry" class="form-label">Where did you hear about us? (Optional)</label>
-              <select id="inputCountry" class="form-select">
-                <option selected>None</option>
-                <option>Friend</option>
-                <option>Cyber cafe</option>
-                <option>Linkedlin</option>
-                <option>Google</option>
-              </select>
-            </div>
-
-            <div class="col-md-6">
-              <label for="" class="form-label">Customer Category*</label>
-              <input type="text" class="form-select" id="validationCustom02" value="" required>
-              <div class="valid-feedback">
-              </div>
-            </div>
-            <p class="choose" style="margin-top: -7%;">choose the category that best describes you to enable us
-              <p class="choose" style="margin-top: -11%;"> serve you better</p>
-
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-6">
-                    <label for="validationDefault05" class="form-label">Security Question Answer</label>
-                    <input type="text" class="form-control" id="validationDefault05" required>
+                <ul class="hover-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <div class="lab" style="color: white;">
+                    <uli><a class="dropdown-item" href="#">Inter-Branch connectivity</a></li>
+                    <uli><a class="dropdown-item" href="#">Internet Service</a></li>
+                    <uli><a class="dropdown-item" href="#">Wireless & Microwave Services</a></li>
                   </div>
-                  
-                 
-                  <div class="col-md-6">
-                    <label for="Currency" class="form-label">Choose Currency</label>
-                    <select id="Currency" class="form-select">
-                      <option selected>NGN</option>
-                      <option>USD</option>
-                      <option>KES</option>
-                      <option>EURO</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="stress">
-                  <p class="Enter">Enter the answer to the security question you choose.We 
-                    <p class="ask">would ask for this to verify your identity when you 
-                    <p class="us">contact us</p>
-                </div>
+                </ul> 
               </div>
-              <div class="container-fluid">
-                
-              </div>
-
-              <div class="container-fluid">
-                <div class="row">
-                  <span class="security">Account Security</span>
-                  <div class="col-md-6">
-                    <label for="inputtext" class="form-label"> <label for="" class="form-label">Password*</label>
-                    </label>
-                    <input type="email" class="form-control" id="Password">
-                  </div>
-                  <div class="col-md-6">
-                    <label for="inputtext" class="form-label"> <label for="" class="form-label">Confirm
-                        Password*</label>
-                    </label>
-                    <input type="text" class="form-control" id="Password">
-                  </div>
-                </div>
-              </div>
-
-              <div class="container-fluid">
-                <p class="join">Join our mailing list</p>
-                <span class="mailing" style="margin-top:-9%;">We would like to send you occasional news, information and
-                  special offers by email. To join our mailing list, simply tick the box below. You can unsubscribe at
-                  any time.
-                </span><br /><br /><br />
-
-                <div class="form-check form-switch">
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <label class="form-check-label" for="flexSwitchCheckChecked">Receive Emails</label>
-                    </div>
-                    <div class="col-sm-6 labe">
-                      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
-                    </div>
-                  </div>
-
-
-
-                </div><br />
-                <div class="row">
-                  <div class="col-12">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="gridCheck">
-                      <label class="form-check-label" for="gridCheck">
-                        I have read and agree to the<a href="#"
-                          style="text-decoration: none;font-size: 16px; font-family: 'Times New Roman', Times, serif;">
-                          Terms of service</a>
-                      </label>
-                    </div>
-                  </div>
-                </div><br /><br />
-                <button class="btn btn-primary" type="submit" value=""
-                  style="width: 100%; margin:0% auto;">Register</button>
-
-                <hr><br />
-                <div class="let">
-                  <span class="already">Already registered with us? <a href="#"
-                      style="text-decoration: none; font-size: 15px; font-family: 'Times New Roman', Times, serif;">Sign
-                      Up</a> 0r <a href="#"
-                      style="text-decoration: none; font-size: 15px; font-family: 'Times New Roman', Times, serif;">Reset
-                      Password</a></span>
-                </div>
-              </div>
-            </p>
-            </div>
+            </li>
             
-    </form>
+
+            <li class="nav-item dropdown">
+              <div class="inter">
+                <a class="nav-link active dropdown-toggle" style="color: red;" href="#" id="offcanvasNavbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Solution
+                </a>
+                <ul class="hover-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <div class="lab">
+                    <uli><a class="dropdown-item" href="#">Cloud Security CAmera Solution</a></li>
+                    <uli><a class="dropdown-item" href="#">Swift Wifi Hotspot</a></li>
+                    <uli><a class="dropdown-item" href="#">Cloud Computin & Hosted Services</a></li>
+                    <uli><a class="dropdown-item" href="#">Smart Home & Services</a></li>
+                  </div>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  active"  style="color: red;" aria-current="page" href="#">Partner</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <div class="inter">
+                <a class="nav-link active dropdown-toggle" style="color: red;" href="#" id="offcanvasNavbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  About
+                </a>
+                <ul class="hover-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <div class="lab">
+                    <uli><a class="dropdown-item" href="#">About Us</a></li>
+                    <uli><a class="dropdown-item" href="#">Our Team</a></li>
+                    <uli><a class="dropdown-item" href="#">NCC code of Practise</a></li>
+                    <uli><a class="dropdown-item" href="#">Privacy Policy</a></li>
+                  </div>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link  active" style="color: red;" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" style="color: red;" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <button class="btn btn-outline-danger" type="submit">Login <i class="bi bi-person"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav><br /><br /><br /><br /><br />
+  <img class="img2" src="img/wift.png" alt="" style="width: 100%;"><br /><br /><br />
+
+  <div class="provide">
+    <h5>
+      We provides WAN links and dedicated Lease Circuits linking up branches of our clients to the HQ, or amongst
+      themselves.
+      These Inter-Branch connectivity solutions are based on 3 primary technologies;
+    </h5><br /><br /><br /><br />
+  </div>
+  <p class="fibre" style="font-size: 20px; text-align: center; font-family: Arial, Helvetica, sans-serif; opacity:0.7;">
+    Fibre / Wireless WAN Services </p>
+  <div class="radio">
+    <p>
+      We provide Fibre and Radio Lastmle WAN solutions with various types and levels of redundancy depending on client
+      needs;
+      the general service solution is based on the following components as below
+    </p>
   </div>
 
+  <div class="multiple">
+    <p><strong>></strong>Multiple Fibre Internet Source. The primary internet source is the from MainOne Fibre cable
+      backed up by Dolphin (ACE) fibre link – both landed at Lagos, Victoria Island.</p>
+    <p class="get"><strong>></strong>Fibre Local / National Loop & WAN Over 80 locations nationwde. The local loop
+      within Lagos and to most locations in Nigeria is provided via the over 34,000 km of fibre rings round Nigeria.
+      The fibre to these locations are provided via multiple routes and separate fibre cable owners to provide
+      redundancy and ensure that there is automatic failover in cause of failure of one route.</p>
+    <p class="mile"><strong>></strong>Radio / Fibre Last mile. A Microwave point to point or point to multipoint radio
+      CPE will be utilised to link from the fibre termination point our local NOC to the client’s office.
+      Generally, a telecoms mast of appropriate height is needed for this radio installation. In circumstance and
+      locations where metro fibre exists or can be provided, then fibre can be used as last mile to the client’s
+      premises.</p>
+    <p class="link"><strong>></strong>Optional Backup Radio / Fibre Last mile. As an additional reliability option, a
+      secondary fibre link from another POP and backhaul source can be added to the above.</p>
+    <p class="site"><strong>></strong>Optional Redundant Onsite 3G/LTE APN Backup. A 3G/LTE based equipment and service
+      is located at the client’s office and cab is used to provide another optional level of redundancy .
+      The 3G/LTE service is described in section below.</p>
+    <p class="fail"><strong>></strong>Automatic Failover Router. A router configured for automatic failover between the
+      2 x Fibre Internet and or 3G APN backup above can be installed at the clients location(s)
+      to automatically failover to the redundant link in the case of the primary fibre/radio internet link failure.</p>
+  </div><br /><br />
+
+
+  <p class="fibre" style="font-size: 20px; text-align: center; font-family: Arial, Helvetica, sans-serif;opacity: 0.7;">
+    Dual 3G / LTE Private APN Links </p>
+
+  <div class="service">
+    <p>
+      We also provides 3G/4G mobile services based Internet and WAN solutions with dual GSM provider redundancy. This
+      service can be used as backup to fibre based WAN or Internet services,
+      and is also used to provide primary link services to ATM, Kiosks, Gaming centers, small office branches,
+      individual locations depending on client needs; the general service solution is based on the following components
+      as below
+    </p>
+  </div>
+
+  <div class="multiple">
+    <p><strong>></strong> Dual SIM 3G / 4G APN links, with Auto failover running on two separate telecoms providers with
+      nationwide coverage.</p>
+    <p><strong>></strong>Available virtually everywhere nationwide, where there is at a least a minimum of 2G service
+      from any of our three partner Telco’s – Etisalat, MTN, and Airtel,</p>
+    .
+    <p><strong>></strong>Good Availability due to dual SIM/ provider configuration – Subject to GSM service quality.</p>
+    <p><strong>></strong>Supports Mobile ATM Trucks / Kiosks, and works even with truck in motion</p>
+    .
+    <p><strong>></strong> May require additional outdoor antenna, at very low GSM network coverage locations.
+      Can also be used for Cash Centres / small branches or Backup to high priority branch fibre links at a different
+      cost profile .</p>
+  </div><br /><br />
+
+  <p class="fibre" style="font-size: 20px; text-align: center; font-family: Arial, Helvetica, sans-serif; opacity:0.7;">
+    Satellite and BGAN WAN links </p><br />
+
+
+  <div>
+    <p class="point">
+      A Microwave point to point or point to multipoint radio CPE will be utilised to link from the fibre termination
+      point our local NOC to the clients office. Generally, a telecoms mast of appropriate height is needed for this
+      radio installation.
+      In circumstance and locations where metro fibre exists or can be provided, then fibre can be used as last mile to
+      the client’s premises
+    </p>
+  </div><br />
+
+  <p class="fibre" style="font-size: 20px; text-align: center; font-family: Arial, Helvetica, sans-serif; opacity:0.7;">
+    Automatic Failover Service and Router </p><br />
+
+
+  <div>
+    <p class="point">
+      An router configured for automatic failover between the optional 2 or more links as above t can be installed at
+      the clients location(s) to automatically failover to the redundant link in the case of the primary fibre/radio
+      internet link failure.
+    </p>
+  </div><br /><br /><br />
+
+  <div class="me">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <p class="info">Contact Information</p><br />
+          <p class="venue"><strong>Office:</strong> 3-6 Alhaji Adejumo Avenue, Ilupeju Industrial 
+          <p class="venue">Estate Ilupeju, Lagos.</p>
+          <p class="road"></p><strong> Branches:</strong>
+          <p class="street"></p><strong> Port Harcourt:</strong> 42 Old Aba Road, Rumuomasi, PH</p>
+          <p class="floor"></p><strong> Warri:</strong> 27 Kosini Street, Off Ogunu Road, Warri.</p>
+          <p class="mall"> <strong> Abuja:</strong> The Valley Mall, 2nd Floor, 215, Ademola</p>
+          <p class="mall" >Adetokunbo Crescent, Wuse2, Abuja</p>
+          <p class="com"><strong>Email:</strong> info@swifttalk.com</p>
+          <p class="phone"> <strong> Phone:</strong> 234 (7040509708)</p>
+        </div>
+
+
+        <div class="col-md-4">
+          <p class="us">Follow Us On</p>
+          <i class="bi bi-facebook text-primary fs-2 mx-2"></i>
+          <i class="bi bi-twitter text-primary fs-2 mx-2"></i>
+          <i class="bi bi-linkedin text-primary fs-2 mx-2"></i>
+        </div>
+
+
+        <div class="col-md-4">
+          <p class="our">Join Our Newsletter</p>
+
+          <form class="row g-3 ">
+            <div class="ema">
+              <label for="inputEmail4" style="opacity: 0.6;" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div><br>
+
+            <div class="fir">
+              <label for="validationCustom01" style="opacity: 0.6;" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="validationCustom01">
+            </div>
+
+            <div class="las">
+              <label for="validationCustom01" style="opacity: 0.6;" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="validationCustom01">
+            </div>
+          </form>
+
+          <div class="rob">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" style="font-size: 20px; font-family: 'Times New Roman', Times, serif;"
+                for="gridCheck">i'm not a robot</label>
+            </div>
+          </div>
+          <button type="submit" style="width: 100%; border-radius: 20px;background: red;" class="btn btn-danger mb-3">Join Now</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+ <div class="all"> © SwiftTalk Nigeria 2023. All rights reserved.</div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-  </script>
-  <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+
 </body>
 
-</html
+</html>

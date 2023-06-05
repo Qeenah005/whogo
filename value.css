@@ -1,0 +1,56 @@
+.all{
+    background-color: #2F3754;
+    margin-top: -2%;
+    padding: 30px;
+    color: white;   
+}
+
+.pic{
+    margin-top: 10%;
+}
+.size{
+    margin-top: 17%;
+}
+
+.pic2{
+    margin-top: 17%;
+}
+.size2{
+    margin-top: 17%;
+}
+
+.lab{
+    color: white;
+}
+.lab:hover{
+    color: gold;
+}
+.get{
+    color: white;
+}
+.get:hover{
+    background: white;
+    color: black;
+    display: flex;
+    border-radius: 50px;
+    margin-left: 50%; 
+    width: 30%;
+}
+.inter{
+    position: relative;
+    display: inline-block;
+}
+.pen{
+    display:none;
+    position:absolute;
+    background:rgb(1, 1, 17);
+    padding:7px;
+    font-size: 15px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;    
+    
+}
+.inter:hover .pen{
+    display: inline-block;
+}
+

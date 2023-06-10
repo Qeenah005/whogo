@@ -286,5 +286,9 @@
     .inter:hover .lab{
         display: inline-block;
     }
+
+    .fibre{
+        margin-left: -9%;
+    }
 }
     

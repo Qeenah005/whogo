@@ -123,24 +123,15 @@
     color: white;
     font-size: 18px;
 }
- 
-.inter{
-    position: relative;
-    display: inline-block;
+
+.other{
+    margin-left: -20%;
 }
-.lab{
-    display:none;
-    position:absolute;
-    background:red;
-    padding:10px;
-    font-size: 20px;
-   
-    
-    
+.what2{
+    margin-top: 10%;
+    width: 10%;
 }
-.inter:hover .lab{
-    display: inline-block;
-}
+
 }
 
 @media screen and (max-width:768px) {
@@ -278,17 +269,159 @@
         position:absolute;
         background:red;
         padding:10px;
-        font-size: 20px;
-       
-        
+        font-size: 20px; 
         
     }
-    .inter:hover .lab{
-        display: inline-block;
-    }
-
+    
     .fibre{
         margin-left: -9%;
     }
+}
+
+@media screen and (max-width:1400px){
+
+    .img2{
+        margin-top: -1%;
+    }
+    .provide{
+        margin-left:14%;
+        font-size: 10PX;
+        margin-bottom:-1%;
+        margin-right: 16%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        opacity:0.6;
+    }
+    .service{
+        margin-left:14%;
+        font-size: 17PX;
+        margin-right: 16%;
+        opacity:0.6;
+    }
+    
+    .radio{
+        margin-left:14%;
+        font-size: 17PX;
+        margin-right: 16%;
+        opacity:0.6;
+    }
+    
+    .multiple{
+        margin-left:17%;
+        font-size: 17PX;
+        margin-right: 16%;
+        opacity:0.6;
+    }
+    .get{
+        margin-top: -1%;
+    }
+    .site{
+        margin-top: -1%;
+    }
+    .fail{
+        margin-top: -1%;
+    }
+    .mile{
+        margin-top: -1%;
+    }
+    .link{
+        margin-top: -1%;
+    }
+    .point{
+        margin-left:14%;
+        font-size: 17PX;
+        margin-right: 16%;
+        opacity:0.6;
+        margin-top: -15px;
+    }
+    
+    .me{
+        background: rgb(220, 218, 218);
+    }
+    
+    .info{
+        font-size: 26px;
+        font-family: 'Times New Roman', Times, serif;
+        opacity:1.0;
+        margin-top:15%;
+    }
+    .us{
+        font-size: 26px;
+        font-family: 'Times New Roman', Times, serif;
+        opacity:1.0;
+        margin-top:15%;
+    }
+    .our{
+        font-size: 29px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        opacity:1.0;
+        margin-top:15%;
+    }
+    .venue{
+        margin-top:-5%;
+    }
+    .road{
+        margin-top: -5%;
+    }
+    .street{
+        margin-top: -5%;
+    }
+    .mall{
+        margin-top: -5%;
+    }
+    .floor{
+        margin-top: -5%;
+    }
+    .phone{
+        margin-top: -5%;
+    }
+    .com{
+        margin-top: -5%;
+    }
+    .fir{
+        margin-bottom: -3%;
+        
+    }
+    .ema{
+        margin-bottom: -3%;
+        
+    }
+    
+    .las{
+        margin-bottom: 3%;
+        
+    }
+    .rob{
+        background: white;
+        width: 50%;
+        padding: 5%;
+        margin-bottom: 3%;
+    }
+    
+    .all{
+        text-align: center;
+        background: black;
+        padding: 20px;
+        color: white;
+        font-size: 18px;
+    }
+     
+    .inter{
+        position: relative;
+        display: inline-block;
+    }
+    .lab{
+        display:none;
+        position:absolute;
+        background:red;
+        padding:10px;
+        font-size: 20px; 
+        
+    }
+    
+    .fibre{
+        margin-left: -9%;
+    }
+
+
 }
     

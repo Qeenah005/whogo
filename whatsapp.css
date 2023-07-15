@@ -1,0 +1,29 @@
+@media screen and (max-width: 1400px) {
+
+    .app {
+        margin-left: -10%;
+    }
+
+    .bor {
+        margin-left: -8%;
+    }           
+
+}
+
+.what2:hover {
+    background: white;
+    color: black;
+}
+
+.how {
+    background: rgb(28, 27, 27);
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 30px;
+}
+
+.how:hover {
+    background: rgb(3, 94, 3)
+}
+

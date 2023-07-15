@@ -1,0 +1,236 @@
+@media screen and (max-width: 768px) {
+
+    .mg{
+        margin-left: -130%;
+    }
+
+    .acc{
+        margin-left: -2%;
+        width: 100%;
+    }
+
+    .da{
+        overflow-x: hidden;
+    }
+
+    .acc{
+        padding-bottom: 50%;
+        
+    }
+
+    .rei{
+        font-size: 30px;
+        margin-left: -15%;
+    }
+
+    .gre{
+        font-size: 20px;
+        margin-left: -15%;
+    }
+    .get{
+        margin-left: -15%;
+        width: 120%;
+        padding-top: 3%;     
+    }
+
+    .de{
+        margin-left: 5%;
+    }
+
+
+ .ind{
+        margin-left: -15%;
+    }
+.vid{
+    width: 75%;
+    margin-left: -30%;
+}
+.ge{
+    padding-bottom: 5%;
+}
+.large{
+    margin-bottom: -10%;
+}
+.con{
+    margin-top: 20%;
+    
+}
+.ran{
+    margin-top:8%;
+    margin-left: 1%;
+}
+.sca{
+    margin-top: 10%;
+    margin-left: 1%;    
+}
+.data{
+    margin-bottom: 3%;
+}
+
+.ca{
+    width: 80%;
+    margin-left: -35%;
+    
+}
+.car{
+    width: 80%;
+    margin-left: -10%;
+}
+
+.le{
+    display: none;
+    
+}
+.se{
+    display: none;
+    
+}
+.zoo{
+    margin-left:-14%;
+    margin-top: -5%;
+}
+.find{
+    font-size: 20px;
+    line-height: 23px;
+}
+.c{
+    margin-left: -18%;
+    width: 90%;
+}
+
+.cr{
+    margin-left: -78%;
+    width: 90%;
+}
+
+.cd{
+    margin-left: -48%;
+    width: 90%;
+}
+
+.cz{
+    margin-left: -108%;
+    width: 90%;
+}
+
+.ad{
+    margin-bottom: -10%;
+}
+
+.blu{
+    margin-bottom: -10%;
+}
+
+.for{
+    margin-left:-15%;
+}
+
+.tex{
+    font-size: 25px; 
+    line-height:23px;
+    margin-left: 5%;  
+
+}
+
+.get{
+    text-align: center;
+    width: 30%;
+
+}
+
+.sale{
+    margin-left: -17%;
+    font-size: 23px;
+}
+
+.icon{
+margin-left: 2%;
+margin-top: 8%;
+
+}
+
+.abo{
+    margin-left: -10%;
+}
+
+.col{
+    display: none;
+}
+.sa{
+    display: none;
+}
+.wh{
+    width: 30%;
+    margin-left: 6%;
+}
+    
+}
+
+@media screen and (min-width: 768px) {
+
+    
+    .da{
+        overflow-x: hidden;
+    }
+    .tex{
+        text-align: center; 
+        font-size: 22px; 
+        line-height:30px;
+    }
+
+    .get{
+        width: 10%;
+        margin-left: -10%;
+
+    }
+    .sale{
+        font-size: 20px;
+        margin-top: -2%;
+        margin-left: 10%;
+    }
+
+    .lang{
+        width: 25%;
+    }
+
+    .curr{
+        width: 30%;
+    }
+
+    .icon{
+        margin-top: 2%;
+    }
+}
+@media screen and (max-width:1400px){
+    .da{
+        overflow-x: hidden;
+    }
+    .tex{
+        text-align: center; 
+        font-size: 22px; 
+        line-height:30px;
+    }
+
+    .get{
+        width: 10%;
+        margin-left: -10%;
+
+    }
+    .sale{
+        font-size: 20px;
+        margin-top: -2%;
+        margin-left: 10%;
+    }
+
+    .lang{
+        width: 25%;
+    }
+
+    .curr{
+        width: 30%;
+    }
+
+    .icon{
+        margin-top: 2%;
+    }
+}

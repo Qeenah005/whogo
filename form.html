@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .error{
+        color: red;
+    }
+</style>
+<body>
+    <form id="form-registration">
+        <div>
+            <label for="Username">Username:</label>
+            <input id="username" oninput="user1()">
+            <span id="userError" class="error"></span>
+        </div>
+        <div>
+            <label for="Email">Email:</label>
+            <input id="email" oninput="email1()">
+            <span id="emailError" class="error"></span>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input id="password" type="password" oninput="pass1()">
+            <span id="passworderror" class="error"></span>
+        </div>
+        <div>
+            <label for="confirmpassword">Confirm Password:</label>
+            <input id="confirmpassword" type="password" oninput="conpass1()">
+            <span id="confirmpassworderror" class="error"></span>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        let principal = document.getElementById('form-registration');
+        let myUsername = document.getElementById('username');
+        let myEmail = document.getElementById('email');
+        let mypassword = document.getElementById('password');
+        let mycomPassword = document.getElementById('password');
+        let userMessage = document.getElementById('userError');
+        let emailMessage = document.getElementById('emailError');
+        let passMessage = document.getElementById('passworderror');
+        let comfirmpassmessage = document.getElementById('confirmpassworderror');
+
+        const nameformat = /^[a-zA-Z\s]+$/;
+        const emailformat = /^\w+@[a-z]+\.[a-z]{2,3}$/;
+        const passform =  /^(?=.[a-z])(?=.[A-Z]).+$/;
+
+        principal.addEventListener('submit', function(bolu){
+            bolu.preventDefault();
+            // bolu is just a parameter
+            // event.preventDefault(); allows the page not to refresh 
+            let isValid = true;
+            // let isValid = true; is a boolean variable 
+
+            if(!myUsername.value){
+                userMessage.textContent = 'Username is required';
+                isValid = false;
+                // document.getElementById('username').value = '';
+                // document.getElementById('username').focus();
+            }
+            else{
+                userMessage.textContent = 'correct';
+                userMessage.style.color = 'blue';
+            }
+
+            if(!myEmail.value){
+                emailMessage.textContent ='Email address field cannot be empty.';
+                isValid = false;
+                // document.getElementById('email').focus();
+            }
+            else if(!myEmail.value.match(emailformat)){
+                emailMessage.textContent='Invalid Email Address!';
+                isValid = false;
+                // document.getElementById('email').value = '';
+                // document.getElementById('email').focus();
+            }
+            else{
+                emailMessage.textContent='Valid Email Address';
+                emailMessage.style.color = "blue";
+            }
+            if (!mypassword.value) {
+                passMessage.textContent ="Please enter your password.";
+                isValid =false ;
+               
+                }
+            else if(!mypassword.value.match(passform)) {
+                passMessage.textContent="Your Password must contain at least one uppercase and lowercase letter!";
+                isValid = false;
+                document.getElementById('password').value = '';
+                document.getElementById('password').focus();
+            }
+            else{
+                passMessage.textContent="Correct Password Format!";
+                passMessage.style.color = "blue"
+            }
+            if(mycomPassword.value === mypassword.value){
+                comfirmpassmessage.textContent = 'The passwords does not match';
+                isValid = false;
+               
+            }
+            else{
+                comfirmpassmessage.textContent = 'Correct';
+                comfirmpassmessage.style.color = 'blue';
+            }
+
+            // we will now have a big if statement for the whole thing
+            if(isValid){
+                principal.submit();
+            }
+        });
+
+        function user1(){
+            if(!myUsername.value){
+                userMessage.textContent = 'Username is required';
+                isValid = false;
+                // document.getElementById('username').value = '';
+                // document.getElementById('username').focus();
+            }
+            else{
+                userMessage.textContent = 'correct';
+                userMessage.style.color = 'blue';
+            }
+        }
+        function email1(){
+            if(!myEmail.value){
+                emailMessage.textContent ='Email address field cannot be empty.';
+                isValid = false;
+                // document.getElementById('email').focus();
+            }
+            else if(!myEmail.value.match(emailformat)){
+                emailMessage.textContent='Invalid Email Address!';
+                isValid = false;
+                // document.getElementById('email').value = '';
+                // document.getElementById('email').focus();
+            }
+            else{
+                emailMessage.textContent='Valid Email Address';
+                emailMessage.style.color = "blue";
+            }
+        }
+        function pass1(){
+            if (!mypassword.value) {
+                passMessage.textContent ="Please enter your password.";
+                isValid =false ;
+               
+                }
+            else if(!mypassword.value.match(passform)) {
+                passMessage.textContent="Your Password must contain at least one uppercase and lowercase letter!";
+                isValid = false;
+            }
+            else{
+                passMessage.textContent="Correct Password Format!";
+                passMessage.style.color = "blue"
+            }
+        }
+        function conpass1(){
+            if(mycomPassword.value === mypassword.value){
+                comfirmpassmessage.textContent = 'The passwords does not match';
+                isValid = false;
+               
+            }
+            else{
+                comfirmpassmessage.textContent = 'Correct';
+                comfirmpassmessage.style.color = 'blue';
+            }
+        }
+
+    </script>
+</body>
+</html>

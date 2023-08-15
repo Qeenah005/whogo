@@ -20,12 +20,12 @@
 
     .rei{
         font-size: 30px;
-        margin-left: -15%;
+        margin-left: -20%;
     }
 
     .gre{
         font-size: 20px;
-        margin-left: -15%;
+        margin-left: -20%;
     }
     .get{
         margin-left: -15%;
@@ -39,14 +39,17 @@
 
 
  .ind{
-        margin-left: -15%;
+        margin-left: -19%;
     }
 .vid{
     width: 75%;
-    margin-left: -30%;
+    margin-left: -113px;
 }
 .ge{
     padding-bottom: 5%;
+    width: 110%;
+    margin-left:-5%;
+    
 }
 .large{
     margin-bottom: -10%;
@@ -69,12 +72,12 @@
 
 .ca{
     width: 80%;
-    margin-left: -35%;
+    margin-left: -26%;
     
 }
 .car{
     width: 80%;
-    margin-left: -10%;
+    margin-left: -7%;
 }
 
 .le{
@@ -86,7 +89,7 @@
     
 }
 .zoo{
-    margin-left:-14%;
+    margin-left:-18%;
     margin-top: -5%;
 }
 .find{
@@ -94,22 +97,22 @@
     line-height: 23px;
 }
 .c{
-    margin-left: -18%;
+    margin-left: -1%;
     width: 90%;
 }
 
 .cr{
-    margin-left: -78%;
+    margin-left: -45%;
     width: 90%;
 }
 
 .cd{
-    margin-left: -48%;
+    margin-left: -23%;
     width: 90%;
 }
 
 .cz{
-    margin-left: -108%;
+    margin-left: -67%;
     width: 90%;
 }
 
@@ -126,14 +129,18 @@
 }
 
 .tex{
-    font-size: 25px; 
+    font-size: 22px; 
     line-height:23px;
-    margin-left: 5%;  
+    margin-left:1%;  
 
+}
+.ceveat{
+    font-size: 20px;
+    margin-left:12%;
 }
 
 .get{
-    text-align: center;
+    text-align:center;
     width: 30%;
 
 }
@@ -141,10 +148,11 @@
 .sale{
     margin-left: -17%;
     font-size: 23px;
+   
 }
 
 .icon{
-margin-left: 2%;
+margin-left:2%;
 margin-top: 8%;
 
 }
@@ -163,7 +171,9 @@ margin-top: 8%;
     width: 30%;
     margin-left: 6%;
 }
-    
+.day{
+    display: none;
+}   
 }
 
 @media screen and (min-width: 768px) {
@@ -200,8 +210,14 @@ margin-top: 8%;
     .icon{
         margin-top: 2%;
     }
+
+    .ceveat{
+        text-align: center;
+        font-size: 25px;
+        
+    }
 }
-@media screen and (max-width:1400px){
+@media screen and (min-width:1400px){
     .da{
         overflow-x: hidden;
     }

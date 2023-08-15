@@ -15,15 +15,53 @@
     color: black;
 }
 
+.mobil{
+    width: 70%;
+    margin-left: 15%;
+}
+
 .how {
-    background: rgb(28, 27, 27);
+    background: rgb(36, 36, 36);
     text-align: center;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 30px;
+    border-radius: 25px; 
+    
 }
 
 .how:hover {
     background: rgb(3, 94, 3)
+} 
+@media screen and (max-width: 768px) {
+
+    .app {
+        margin-left: -10%;
+    }
+
+    .bor {
+        margin-left: -8%;
+    }  
+    
+    .mobil{
+        width: 95%;
+        margin-left: 5%;
+       
+        
+    }
 }
 
+
+
+@media screen and (max-width: 1125px) {            
+    .mobil{
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.how{
+    width: 60% !important;
+}
+}

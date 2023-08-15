@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h1>Prompt based calculator</h1>
+        <button id="cal" onclick="calculate()">Click button for the Calculation</button>
+        <span id="now"></span>
+    </div>
+
+    <script>
+        //assigning top level variables
+        let button = document.getElementById('cal')
+        let current = document.getElementById('now')
+
+        //the calculator function
+        function calculate() {
+
+            alert('Basic and Advance calculator by Sekinat Wahab')
+            alert('New mode added! \'Convertion mode, it\'s basically for converting time and more....')
+
+            let Selecttype = prompt(
+                ` What calculation mode do you want 
+                  Enter 1 for basic calculations like +,-,*,/ 
+                  Enter 2 for advanced calculation mode like cos, tan, sin e.t.c 
+                  Enter 3 for Converting units like minute to seconds e.t.c`
+            )
+            let func;
+            //condition for basic mode
+            if (Selecttype == 1) {
+
+                let input1 = prompt('Enter a number:')
+                let symbol = prompt('Enter any symbol(+,-,/,*):')
+                let input2 = prompt(' Enter the second number to complete the calculation')
+                let answer, before;
+                //using switch to check the operator, do operation and display output in html
+
+                switch (symbol) {
+                    case '+':
+                    if (isNaN(input1) || input1=="" && input2=="") {
+                            alert('please insert a valid input')
+                        } 
+                        else { 
+                        alert(parseInt(input1) + parseInt(input2))
+                        answer = parseInt(input1) + parseInt(input2)
+                        before = `<li>${input1} ${symbol} ${input2} = ${answer}</li>`
+                        current.innerHTML += before
+                        }
+                        break;
+
+                    case '-':
+                    if (isNaN(input1) || input1=="" && input2=="") {
+                            alert(' please insert a valid input')
+                        } 
+                        else {
+                        alert(parseInt(input1) - parseInt(input2))
+                        answer = parseInt(input1) - parseInt(input2)
+                        before = `<li>${input1} ${symbol} ${input2} = ${answer}</li>`
+                        current.innerHTML -= before
+                        }
+                        break;
+
+                    case '/':
+                        if (symbol == '/' && input1 <= 0) {
+                            alert('syntatic error')
+                        } 
+                        else {
+                        alert(parseInt(input1) / parseInt(input2))
+                        answer = parseInt(input1) / parseInt(input2)
+                        before = `<li>${input1} ${symbol} ${input2} = ${answer}</li>`
+                        current.innerHTML /= before
+                        }
+                        break;
+
+                    case '*':
+                        if (operator == '*' && input1 <= 0) {
+                            alert('syntatic error')
+                        }  
+                        else {
+                        alert(parseInt(input1) * parseInt(input2))
+                        answer = parseInt(input1) * parseInt(input2)
+                        before = `<li>${input1} ${symbol} ${input2} = ${answer}</li>`
+                        current.innerHTML *= before
+                        }
+                        break;
+                    default:
+                        alert('Invalid symbol!')
+                }
+                //condition for advance calculator  
+            } 
+            else if (Selecttype == 2) {
+                let func = prompt(` Enter 1 for sine 
+                2 for cosine 
+                3 for tanget 
+                4 for square root`)
+                let mathNumber, input;
+                switch (func) {
+                    case '1':
+                        mathNumber = prompt('Insert any number')
+                        if (isNaN(mathNumber)) {
+                            alert('Invalid input')
+                        } else {
+                            alert(Math.sin(mathNumber))
+                            answer = Math.sin(mathNumber)
+                            before = `<li>Sine ${mathNumber} = ${answer}</li>`
+                            current.innerHTML += before
+                        }
+                        break;
+                    case '2':
+                        mathNumber = prompt('Insert any number')
+                        if (isNaN(mathNumber)) {
+                            alert('Invalid input')
+                        } else {
+                            alert(Math.cos(mathNumber))
+                            answer = Math.cos(mathNumber)
+                            before = `<li>Cosine ${mathNumber} = ${answer}</li>`
+                            current.innerHTML += before
+                        }
+                        break;
+                    case '3':
+                        mathNumber = prompt('Insert any number')
+                        if (isNaN(mathNumber)) {
+                            alert('Invalid input')
+                        } else {
+                            alert(Math.tan(mathNumber))
+                            answer = Math.tan(mathNumber)
+                            before = `<li>Tan ${mathNumber} = ${answer}</li>`
+                            current.innerHTML += before
+                        }
+                        break;
+                    case '4':
+                        mathNumber = prompt('square root of')
+                        if (isNaN(mathNumber)) {
+                            alert('Invalid input')
+                        } else {
+                            alert(Math.sqrt(mathNumber))
+                            answer = Math.sqrt(mathNumber)
+                            before = `<li>Square root of ${mathNumber} = ${answer}</li>`
+                            current.innerHTML += previous
+                        }
+                        break;
+
+                    default:
+                        alert('Invalid input')
+                }
+                //code for converting mode
+            } 
+            else if (Selecttype == 3) {
+                func = prompt(`Enter 1 for Celsius to Fahrenheit Converter  
+                2 for Time converter`)
+                switch (func) {
+                    case '1':
+                        input = prompt('Enter degree in Celcuis')
+                        if (isNaN(input)) {
+                            alert('Invalid input')
+                        } 
+                        else {
+                            alert(`${parseFloat(input)} in Fahrenheit is ${(input * 9/5)+32}`)
+                            answer = (parseFloat(input) * 9 / 5) + 32
+                            before = `<li>${input} Celcuis in Fahrenheit is ${answer}</li>`
+                            current.innerHTML += before
+                        }
+                        break;
+
+                    case '2':
+                        input = prompt(
+                            ` Enter 1 to convert day to hour  
+                            2 to convert hours to minutes 
+                            3 to convert minutes to seconds`
+                        )
+                        if (isNaN(input)) {
+                            alert('Enter a valid number')
+                        } 
+                        else {
+                            switch (input) {
+                                case '1':
+                                    let timeHandler = parseInt(prompt(
+                                        ' Enter number of days you want to convert:'))
+                                    if (isNaN(timeHandler)) {
+                                        alert('Invalid input')
+                                    } 
+                                    else {
+                                        alert(`${timeHandler} days converted to hours is ${timeHandler*24}`)
+                                        result = timeHandler * 24
+                                        before =
+                                            `<li>${timeHandler} days converted to hour is ${answer} hours</li>`
+                                        current.innerHTML += before
+                                    }
+                                    break;
+
+                                case '2':
+                                    let timeHandler1 = parseInt(prompt(
+                                        ' Enter number of hours you want to convert to minute:'))
+                                    if (isNaN(timeHandler1)) {
+                                        alert('Invalid input')
+                                    } else {
+                                        alert(`${timeHandler1} hours converted to minute is ${timeHandler1*60}`)
+                                        answer = timeHandler1 * 60
+                                        before =
+                                            `<li>${timeHandler1} hours converted to minute is ${answer} minutes</li>`
+                                        current.innerHTML += before
+                                    }
+                                    break;
+
+                                case '3':
+                                    let timeHandler2 = parseInt(prompt(
+                                        ' Enter number of minutes you want to convert to seconds:'))
+                                    if (isNaN(timeHandler2)) {
+                                        alert('Invalid input')
+                                    } else {
+                                        alert(
+                                            `${timeHandler2} minutes converted to seconds is ${timeHandler2*60}`)
+                                        answer = timeHandler2 * 60
+                                        before =
+                                            `<li>${timeHandler2} minutes converted to seconds is ${answer} hours</li>`
+                                        current.innerHTML += previous
+                                    }
+                                    break;
+                                default:
+                                    alert('Invalid input')
+                            }
+                        }
+                        break;
+                    default:
+                        alert('Invalid input')
+                }
+            } else {
+                alert('Wrong input')
+                console.warn('Wrong input!')
+            }
+
+        };
+    </script>
+</body>
+
+</html>

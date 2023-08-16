@@ -286,7 +286,7 @@
     let confirmm = document.getElementById('spannn');
 
     const emailfunction = /^\w+@[a-z]+\.[a-z]{2,3}$/;
-    const passwordd = /^(?=.[a-z])(?=.[A-Z]).+$/;
+    const passwordd = /^(?=.+[!@#$%^&(),.?":{}|<>])(?=.+\d)(?=.+[a-zA-Z]).{8,16}$/;
 
     function myemail() {
       if (!myEmail.value) {
